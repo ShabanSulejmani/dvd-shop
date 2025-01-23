@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router";
 import Layout from "./Layout.jsx";
-import Home from "./pages/home.jsx";
+import Home from "./pages/Home.jsx";
 import Action from "./pages/Action.jsx";
 import Comedy from "./pages/Comedy.jsx";
 import Animation from "./pages/Animation.jsx";

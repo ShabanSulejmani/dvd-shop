@@ -1,13 +1,25 @@
 
+import { NavLink } from "react-router"
+import Movie from "./Movie.jsx"
 
 
-export default function Movies(props) {
-    const {name, genre, thumb_url} = props.card
-  return <>
-  <section id="movieName">
-    <p>{name}</p>
-    <p id="genre">{genre}</p>
-    <img src={thumb_url} />
-    </section>
-      </>
+
+export default function Movies({ movies, addToCart ,removeFromCart})  {
+  return (
+    <div>
+     
+      {movies.map((movie, index) => (
+        <Movie key={movie.name + "-" + index} movie={movie} addToCart={addToCart} removeFromCart={removeFromCart}/>
+      ))}
+    </div>
+  );
 }
+
+/*
+    return <div>
+        <p>{name}</p>
+        <p>{genre}</p>  
+       
+        <button onClick={() => addToCart(name)}>Add to cart</button>
+        <button onClick={() => removeFromCart(name)}>Remove from cart</button>
+    </div>*/
