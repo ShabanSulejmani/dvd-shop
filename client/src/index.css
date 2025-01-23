@@ -2,3 +2,23 @@
 display: flex;
 justify-content: space-between;
 }
+
+#movieList { 
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+#cart {
+  background-color: black;
+  color: ghostwhite;
+  width: 15vw;
+  height: 90vh;
+  position: sticky;
+  top: 5vh; 
+}
+
+#genre {
+  display: flex;
+  justify-content: space-between ;
+}

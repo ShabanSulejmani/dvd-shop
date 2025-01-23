@@ -5,6 +5,7 @@ import data from "../../public/data.js"
 export default function Home() {
 const movies = data
 
+
 return <>
     <h1>Movies</h1>
     <div id="homepage">
